@@ -1,0 +1,21 @@
+.contact label input , .contact label select {
+   margin-left: 2rem;
+}
+
+.contact form {
+    max-width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact input[type="submit"] {
+    background-color: #4c9be8;
+    padding: 1rem;
+    outline:0;
+    border: 0;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}

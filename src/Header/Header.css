@@ -1,0 +1,15 @@
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+  } */
+  
+  .menuHeader {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .logoHeader {
+    width: 50px;
+  }
