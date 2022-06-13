@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import "./Contenu.css";
 import logo from "../logo.svg";
 
+  import Modal from "../Modal/Modal";
+  
 export default function Contenu({initialCount}) {
 
   const [count, setCount] = useState(0);
+const [show, setShow] = useState(false);
+
+
+function handleModal() {
+  setShow(!show);
+}
 
   // function incremente() {
   //   setCount(count + 1);
@@ -13,6 +21,12 @@ export default function Contenu({initialCount}) {
   return (
     <>
       <header className="App-header">
+        <div className="modalContenu">
+          <button onClick={handleModal}>
+            { show ? 'Cacher' : 'Montrer'} la Modal
+          </button>
+          {show && <Modal />}
+        </div>
         <div className="compteur">
           Total : {count}
           <div>
